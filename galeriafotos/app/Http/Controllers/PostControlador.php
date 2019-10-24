@@ -46,11 +46,6 @@ class PostControlador extends Controller
         $post->arquivo = $path;
         $post->save();
         return redirect('/');
-
-
-
-
-
     }
 
     public function download($id)

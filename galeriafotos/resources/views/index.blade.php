@@ -1,3 +1,16 @@
+<!--
+
+Desenvolvido para portifólio
+
+Autor: Luan de Camargo
+www.luandecamargo.com.br
++55 (11) 95049-1045
+
+24/10/2019
+
+Se for utilizar, não se esqueça de manter os créditos ao autor.
+  
+-->  
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -80,7 +93,6 @@
                       <p class="card-text">{{ $post->mensagem }}</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <!--button type="button" class="btn btn-sm btn-outline-secondary">Download</button-->
                           <a type="button" class="btn btn-sm btn-outline-secondary" href="/download/{{$post->id}}">Download</a>
                           <form method="post" action="/{{$post->id}}">
                             @csrf
@@ -102,4 +114,3 @@
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
 </body>
 </html>
-
